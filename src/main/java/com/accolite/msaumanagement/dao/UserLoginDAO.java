@@ -2,6 +2,7 @@ package com.accolite.msaumanagement.dao;
 import java.util.UUID;
 
 import com.accolite.msaumanagement.dao.UserLoginDAO;
+import com.accolite.msaumanagement.exception.CustomExceptionHandler;
 import com.accolite.msaumanagement.model.UserLogin;
 import com.accolite.msaumanagement.utility.SecurePasswordGeneration;
 
@@ -21,18 +22,17 @@ public class UserLoginDAO {
 	  SecurePasswordGeneration generator;
 	  
 	public String[] authenticate(String userName, String password) throws Exception {
-		// TODO Auto-generated method stub
 		logger.info("Entering Authentication ");
-		String[] message = {""}; // array is used for lambda expression
+		String[] message = {"",""}; // array is used for lambda expression
 		try {
 			
-			String sql = "SELECT pwdhash , salt from user_login where BINARY email = ?"; 
+			String sql = "SELECT   pwdhash , salt ,name from user_login where BINARY email = ?"; 
 		
 			jdbcTemplate.query(sql, new Object[] { userName }, 
-					(rs , rowNum) -> new UserLogin(null,rs.getString(1),null,rs.getString(2),false)).forEach(user->{
+					(rs , rowNum) -> new UserLogin(null,rs.getString(1),rs.getString(3),rs.getString(2),false)).forEach(user->{
 						String pwdOriginal = user.getPassword();
 						String pwdGenerated = generator.get_SHA_512_SecurePassword(password, user.getSalt());
-						System.out.print(user.getPassword());
+//						System.out.print(user.getPassword());
 					if(user.getPassword().equals(""))
 					{
 						message[0] = "User not registered yet";
@@ -41,6 +41,7 @@ public class UserLoginDAO {
 					{
 						
 						message[0] = "Login Successfully" ;
+						message[1] =  user.getName();
 					}
 					else
 					{
@@ -59,15 +60,13 @@ public class UserLoginDAO {
 		catch(Exception e)
 		{
 			logger.error("Failed Login Authentication"+e.toString());
+			throw new CustomExceptionHandler("Login authentication failure");
 			
 		}
-		
-		return message;
 		
 	}
 
 	public  boolean registerUser(UserLogin user) {
-		// TODO Auto-generated method stub
 		logger.info("Entering RegisterUser ");
 		
 		logger.info("Generating Secure Password");

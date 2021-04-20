@@ -20,34 +20,35 @@ public class LoginService {
 	private static final Logger logger = LogManager.getLogger(LoginService.class);
 
 	@Autowired
-	UserLoginDAO service;
+	UserLoginDAO userLoginRepo; //User login repo
 	@Transactional
 	public Map<String,String> auth(String userName , String password) throws Exception
 	{
 		logger.info(" Authenticate Service Running....");
-		String[] res = service.authenticate(userName, password);
-		Map <String,String> mp = new HashMap<>();
-		mp.put("responseMessage",res[0]);
-		logger.info(" Authenticate Service Finished " + res[0]);
-		return mp;
+		String[] res = userLoginRepo.authenticate(userName, password);
+		Map <String,String> responseObject = new HashMap<>();
+		responseObject.put("responseMessage",res[0]);
+		responseObject.put("name" , res[1]);
+		logger.info(" Authenticate Service Finished   Message: " + res[0]);
+		return responseObject;
 		
 	}
 	@Transactional
 	public Map<String,String> register(UserLogin user) throws Exception
 	{
 		logger.info(" Register Service Running....");
-		boolean success = service.registerUser(user);
-		Map <String,String> mp = new HashMap<>();
+		boolean success = userLoginRepo.registerUser(user);
+		Map <String,String> responseObject = new HashMap<>();
 		if(success == true)
 		{
-			mp.put("responseMessage", "Registered Successfully");
+			responseObject.put("responseMessage", "Registered Successfully");
 		}
 		else
 		{
-			mp.put("responseMessage", "Registered Unsuccessful");
+			responseObject.put("responseMessage", "Registered Unsuccessful");
 		}
 		logger.info(" Register Service Finished");
-		return mp;
+		return responseObject;
 		
 	}
 	

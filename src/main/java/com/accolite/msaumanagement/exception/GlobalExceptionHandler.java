@@ -29,7 +29,7 @@ public class GlobalExceptionHandler {
 	public ResponseEntity<Map<String, String>> exceptionhandler(Exception e) {
 		Map<String, String> map = new HashMap<>();
 		map.put("responseMessage",
-				"Something went wrong.Sorry for the inconvenience caused!" + e.getLocalizedMessage());
+				"Something went wrong.Sorry for the inconvenience caused! SERVER ERROR : 500 " + e.getLocalizedMessage());
 		HttpStatus status = HttpStatus.INTERNAL_SERVER_ERROR;
 		return new ResponseEntity(map, status);
 	}

@@ -1725,3 +1725,792 @@ Using generated security password: 8adc47ca-47f5-4170-bf76-3069abbf2ae5
 18-04-2021 15:53:52.158  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
 18-04-2021 15:53:52.159  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 18-04-2021 15:53:52.167  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+18-04-2021 17:23:24.842  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+18-04-2021 17:23:24.870  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+18-04-2021 17:23:25.277  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5a261f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-2021 17:23:25.311  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+18-04-2021 17:23:25.622  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+18-04-2021 17:23:25.634  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+18-04-2021 17:23:25.635  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+18-04-2021 17:23:25.635  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+18-04-2021 17:23:25.754  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+18-04-2021 17:23:25.755  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1593 ms
+18-04-2021 17:23:25.896  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+18-04-2021 17:23:25.906  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+18-04-2021 17:23:26.149  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+18-04-2021 17:23:26.202  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+18-04-2021 17:23:26.215  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18-04-2021 17:23:26.279  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+18-04-2021 17:23:26.473  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18-04-2021 17:23:26.654  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+18-04-2021 17:23:26.702  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 57f0c313-f834-47c6-8efb-cf717dce28e8
+
+18-04-2021 17:23:26.835  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65fe2691, org.springframework.security.web.context.SecurityContextPersistenceFilter@479b5066, org.springframework.security.web.header.HeaderWriterFilter@76ececd, org.springframework.web.filter.CorsFilter@479111ba, org.springframework.security.web.authentication.logout.LogoutFilter@6c8dbf56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b1cd7bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@712c5463, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57ad1178, org.springframework.security.web.session.SessionManagementFilter@76d72b5b, org.springframework.security.web.access.ExceptionTranslationFilter@21a9a705]
+18-04-2021 17:23:26.883  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+18-04-2021 17:23:26.913  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+18-04-2021 17:23:26.915  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+18-04-2021 17:23:26.915  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+18-04-2021 17:23:26.935  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18-04-2021 17:23:26.945  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+18-04-2021 17:42:50.065  INFO ----- [nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18-04-2021 17:42:50.065  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+18-04-2021 17:42:50.073  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+18-04-2021 18:13:08.796  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+18-04-2021 18:13:08.800  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+18-04-2021 18:13:08.801  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+18-04-2021 18:13:08.806  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+18-04-2021 18:13:19.308  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+18-04-2021 18:13:19.336  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+18-04-2021 18:13:19.799  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fd79d35e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-2021 18:13:19.838  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+18-04-2021 18:13:20.274  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+18-04-2021 18:13:20.288  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+18-04-2021 18:13:20.288  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+18-04-2021 18:13:20.289  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+18-04-2021 18:13:20.415  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+18-04-2021 18:13:20.415  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1858 ms
+18-04-2021 18:13:20.623  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+18-04-2021 18:13:20.637  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+18-04-2021 18:13:20.883  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+18-04-2021 18:13:20.956  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+18-04-2021 18:13:20.975  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18-04-2021 18:13:21.048  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+18-04-2021 18:13:21.294  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18-04-2021 18:13:21.544  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+18-04-2021 18:13:21.732  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 47cd31e4-6d16-4e13-9b7a-42ec5e75b6b4
+
+18-04-2021 18:13:21.873  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33a55bd8, org.springframework.security.web.context.SecurityContextPersistenceFilter@56e9a474, org.springframework.security.web.header.HeaderWriterFilter@939ff41, org.springframework.web.filter.CorsFilter@73a8e994, org.springframework.security.web.authentication.logout.LogoutFilter@539a138b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2dbfcf7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2db2a05f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a1cc163, org.springframework.security.web.session.SessionManagementFilter@39ffda4a, org.springframework.security.web.access.ExceptionTranslationFilter@d257579]
+18-04-2021 18:13:21.933  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18-04-2021 18:13:21.951  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+18-04-2021 18:13:21.956  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+18-04-2021 18:13:22.000  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+18-04-2021 18:13:22.004  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+18-04-2021 18:13:22.005  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+18-04-2021 18:18:52.673  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+18-04-2021 18:18:52.676  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+18-04-2021 18:18:52.677  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+18-04-2021 18:18:52.686  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+19-04-2021 00:26:21.878  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+19-04-2021 00:26:21.900  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+19-04-2021 00:26:22.251  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$70bcba35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-04-2021 00:26:22.280  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+19-04-2021 00:26:22.601  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+19-04-2021 00:26:22.610  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+19-04-2021 00:26:22.611  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+19-04-2021 00:26:22.611  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+19-04-2021 00:26:22.703  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+19-04-2021 00:26:22.704  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1421 ms
+19-04-2021 00:26:22.832  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+19-04-2021 00:26:22.839  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+19-04-2021 00:26:23.949 ERROR ----- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324)
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:120)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$1(HibernateJpaConfiguration.java:130)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:136)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:102)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:94)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:132)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.accolite.msaumanagement.MSAUManagementApplication.main(MSAUManagementApplication.java:11)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 49 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 52 more
+19-04-2021 00:26:23.989  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+19-04-2021 00:26:23.993  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19-04-2021 00:26:24.042  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+19-04-2021 00:26:24.182  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+19-04-2021 00:26:24.298  INFO ----- [         task-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+19-04-2021 00:26:24.408  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8d5971e8-54bd-46e5-8213-34c3b5407750
+
+19-04-2021 00:26:24.480  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a565afb, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e4e8fdf, org.springframework.security.web.header.HeaderWriterFilter@76130a29, org.springframework.web.filter.CorsFilter@2fd64b11, org.springframework.security.web.authentication.logout.LogoutFilter@3a1706e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2721044, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bee793f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@949c598, org.springframework.security.web.session.SessionManagementFilter@53e76c11, org.springframework.security.web.access.ExceptionTranslationFilter@5fef2aac]
+19-04-2021 00:26:24.520  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+19-04-2021 00:26:24.545  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+19-04-2021 00:26:24.547  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+19-04-2021 00:26:24.548  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+19-04-2021 00:26:25.303 ERROR ----- [         task-1] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1214)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1245)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 33 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 36 more
+19-04-2021 00:26:25.305  WARN ----- [         task-1] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19-04-2021 00:26:37.286  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+19-04-2021 00:26:37.286  WARN ----- [extShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+19-04-2021 00:26:37.287  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+19-04-2021 00:26:45.771  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+19-04-2021 00:26:45.793  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+19-04-2021 00:26:46.143  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$97cee1a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-04-2021 00:26:46.173  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+19-04-2021 00:26:46.462  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+19-04-2021 00:26:46.470  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+19-04-2021 00:26:46.470  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+19-04-2021 00:26:46.471  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+19-04-2021 00:26:46.565  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+19-04-2021 00:26:46.565  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1317 ms
+19-04-2021 00:26:46.690  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+19-04-2021 00:26:46.698  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+19-04-2021 00:26:46.860  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+19-04-2021 00:26:46.906  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+19-04-2021 00:26:46.918  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19-04-2021 00:26:46.957  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+19-04-2021 00:26:47.100  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+19-04-2021 00:26:47.250  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+19-04-2021 00:26:47.328  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ff125e2e-afc3-4d79-9e9d-2b61d356fe1c
+
+19-04-2021 00:26:47.410  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67e25252, org.springframework.security.web.context.SecurityContextPersistenceFilter@1acb74ad, org.springframework.security.web.header.HeaderWriterFilter@4b960b5b, org.springframework.web.filter.CorsFilter@58f4b31a, org.springframework.security.web.authentication.logout.LogoutFilter@b3e86d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f382a5e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7316523a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21a9a705, org.springframework.security.web.session.SessionManagementFilter@6d08b4e6, org.springframework.security.web.access.ExceptionTranslationFilter@7ed3df3b]
+19-04-2021 00:26:47.455  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+19-04-2021 00:26:47.460  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19-04-2021 00:26:47.469  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+19-04-2021 00:26:47.482  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+19-04-2021 00:26:47.484  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+19-04-2021 00:26:47.484  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+19-04-2021 00:26:50.879  INFO ----- [nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+19-04-2021 00:26:50.879  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+19-04-2021 00:26:50.885  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+19-04-2021 00:27:56.562  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+19-04-2021 00:27:56.567  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+19-04-2021 00:27:56.568  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+19-04-2021 00:27:56.580  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+19-04-2021 00:28:08.831  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+19-04-2021 00:28:08.855  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+19-04-2021 00:28:09.185  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f3bba196] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-04-2021 00:28:09.214  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+19-04-2021 00:28:09.506  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+19-04-2021 00:28:09.514  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+19-04-2021 00:28:09.515  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+19-04-2021 00:28:09.515  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+19-04-2021 00:28:09.611  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+19-04-2021 00:28:09.612  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1350 ms
+19-04-2021 00:28:09.745  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+19-04-2021 00:28:09.755  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+19-04-2021 00:28:09.936  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+19-04-2021 00:28:09.982  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+19-04-2021 00:28:09.995  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19-04-2021 00:28:10.041  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+19-04-2021 00:28:10.222  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+19-04-2021 00:28:10.369  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+19-04-2021 00:28:10.477  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4fbaf2d5-e547-4fbe-aab3-82b72682a867
+
+19-04-2021 00:28:10.560  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fd05b3e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b477141, org.springframework.security.web.header.HeaderWriterFilter@1d901f20, org.springframework.web.filter.CorsFilter@4eb9f2af, org.springframework.security.web.authentication.logout.LogoutFilter@58f4b31a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7316523a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a83495d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a481728, org.springframework.security.web.session.SessionManagementFilter@2cd4e16a, org.springframework.security.web.access.ExceptionTranslationFilter@1e4c6583]
+19-04-2021 00:28:10.603  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19-04-2021 00:28:10.611  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+19-04-2021 00:28:10.612  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+19-04-2021 00:28:10.643  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+19-04-2021 00:28:10.644  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+19-04-2021 00:28:10.645  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+19-04-2021 00:35:21.465  INFO ----- [nio-8081-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+19-04-2021 00:35:21.465  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+19-04-2021 00:35:21.472  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+19-04-2021 00:52:27.736  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+19-04-2021 00:52:27.740  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+19-04-2021 00:52:27.741  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+19-04-2021 00:52:27.750  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+19-04-2021 12:41:06.974  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+19-04-2021 12:41:07.003  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+19-04-2021 12:41:07.398  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$59c451aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19-04-2021 12:41:07.446  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+19-04-2021 12:41:07.772  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+19-04-2021 12:41:07.788  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+19-04-2021 12:41:07.789  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+19-04-2021 12:41:07.789  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+19-04-2021 12:41:07.905  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+19-04-2021 12:41:07.906  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1740 ms
+19-04-2021 12:41:08.050  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+19-04-2021 12:41:08.061  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+19-04-2021 12:41:08.267  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+19-04-2021 12:41:08.323  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+19-04-2021 12:41:08.337  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19-04-2021 12:41:08.399  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+19-04-2021 12:41:08.600  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+19-04-2021 12:41:08.802  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+19-04-2021 12:41:08.839  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dd3db849-2099-4b68-9236-5006c50a1660
+
+19-04-2021 12:41:08.951  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7668892a, org.springframework.security.web.context.SecurityContextPersistenceFilter@772caabe, org.springframework.security.web.header.HeaderWriterFilter@2d85fb64, org.springframework.web.filter.CorsFilter@a83495d, org.springframework.security.web.authentication.logout.LogoutFilter@7316523a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7102ac3e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b960b5b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e83992, org.springframework.security.web.session.SessionManagementFilter@239f017e, org.springframework.security.web.access.ExceptionTranslationFilter@777d0bc3]
+19-04-2021 12:41:09.013  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+19-04-2021 12:41:09.053  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+19-04-2021 12:41:09.054  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+19-04-2021 12:41:09.055  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+19-04-2021 12:41:09.078  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19-04-2021 12:41:09.088  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+19-04-2021 12:41:59.847  INFO ----- [nio-8081-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+19-04-2021 12:41:59.847  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+19-04-2021 12:41:59.855  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+19-04-2021 12:43:21.309  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+19-04-2021 12:43:21.312  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+19-04-2021 12:43:21.312  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+19-04-2021 12:43:21.322  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 12:43:01.130  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 12:43:01.160  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+20-04-2021 12:43:01.565  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7e03ed6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 12:43:01.626  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 12:43:01.947  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 12:43:01.957  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 12:43:01.958  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 12:43:01.958  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 12:43:02.063  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 12:43:02.063  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1621 ms
+20-04-2021 12:43:02.205  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 12:43:02.215  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 12:43:02.423  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 12:43:02.478  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 12:43:02.492  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 12:43:02.551  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 12:43:02.741  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 12:43:02.913  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 12:43:02.996  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 12f265aa-0ea2-4c6b-8cdd-3bcd0593d928
+
+20-04-2021 12:43:03.103  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f1cddf3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b13467c, org.springframework.security.web.header.HeaderWriterFilter@772caabe, org.springframework.web.filter.CorsFilter@228bda54, org.springframework.security.web.authentication.logout.LogoutFilter@3625a016, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64dae3b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1acb74ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75b6dd5b, org.springframework.security.web.session.SessionManagementFilter@465b38e6, org.springframework.security.web.access.ExceptionTranslationFilter@239f017e]
+20-04-2021 12:43:03.151  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 12:43:03.173  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 12:43:03.183  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 12:43:03.183  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 12:43:03.185  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 12:43:03.185  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 12:52:09.827  INFO ----- [nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 12:52:09.828  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 12:52:09.835  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+20-04-2021 12:56:12.420  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 12:56:12.422  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 12:56:12.422  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 12:56:12.434  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 12:56:19.986  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 12:56:20.011  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+20-04-2021 12:56:20.347  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4389191] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 12:56:20.377  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 12:56:20.687  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 12:56:20.695  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 12:56:20.696  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 12:56:20.696  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 12:56:20.786  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 12:56:20.786  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1344 ms
+20-04-2021 12:56:20.907  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 12:56:20.915  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 12:56:21.076  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 12:56:21.122  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 12:56:21.136  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 12:56:21.171  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 12:56:21.321  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 12:56:21.453  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 12:56:21.565  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 202a745a-86a5-4d8c-be69-cca929b6ce63
+
+20-04-2021 12:56:21.646  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d20e575, org.springframework.security.web.context.SecurityContextPersistenceFilter@10c47c79, org.springframework.security.web.header.HeaderWriterFilter@7c37f145, org.springframework.web.filter.CorsFilter@3252747e, org.springframework.security.web.authentication.logout.LogoutFilter@6d0be7ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@753fd7a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b3cde6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b4b96a4, org.springframework.security.web.session.SessionManagementFilter@3a2e9f5b, org.springframework.security.web.access.ExceptionTranslationFilter@479111ba]
+20-04-2021 12:56:21.658  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 12:56:21.665  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 12:56:21.684  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 12:56:21.709  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 12:56:21.710  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 12:56:21.711  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 12:56:24.253  INFO ----- [nio-8081-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 12:56:24.253  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 12:56:24.261  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+20-04-2021 12:57:07.895  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 12:57:07.898  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 12:57:07.900  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 12:57:07.912  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 12:57:14.748  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 12:57:14.770  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+20-04-2021 12:57:15.100  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e26d99ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 12:57:15.127  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 12:57:15.392  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 12:57:15.400  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 12:57:15.401  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 12:57:15.401  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 12:57:15.493  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 12:57:15.494  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1275 ms
+20-04-2021 12:57:15.613  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 12:57:15.620  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 12:57:15.781  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 12:57:15.825  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 12:57:15.833  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 12:57:15.872  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 12:57:16.017  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 12:57:16.171  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 12:57:16.281  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 65376bda-b154-425c-b9e1-a8a6695a92c6
+
+20-04-2021 12:57:16.364  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77fa9381, org.springframework.security.web.context.SecurityContextPersistenceFilter@73a8e994, org.springframework.security.web.header.HeaderWriterFilter@7bf01cb, org.springframework.web.filter.CorsFilter@76d72b5b, org.springframework.security.web.authentication.logout.LogoutFilter@7affc159, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b5ac798, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@267cde2e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cac93fe, org.springframework.security.web.session.SessionManagementFilter@7316523a, org.springframework.security.web.access.ExceptionTranslationFilter@1015a4b9]
+20-04-2021 12:57:16.384  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 12:57:16.393  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 12:57:16.407  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 12:57:16.433  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 12:57:16.435  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 12:57:16.435  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 12:57:18.789  INFO ----- [nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 12:57:18.790  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 12:57:18.796  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+20-04-2021 12:57:54.159  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 12:57:54.162  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 12:57:54.163  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 12:57:54.178  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 12:58:01.813  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 12:58:01.835  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+20-04-2021 12:58:02.162  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$881699e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 12:58:02.191  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 12:58:02.460  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 12:58:02.468  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 12:58:02.469  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 12:58:02.469  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 12:58:02.558  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 12:58:02.558  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1271 ms
+20-04-2021 12:58:02.677  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 12:58:02.684  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 12:58:02.842  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 12:58:02.888  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 12:58:02.899  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 12:58:02.940  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 12:58:03.086  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 12:58:03.222  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 12:58:03.342  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2211ef9a-5532-4db6-b35a-3f3d34ffb04f
+
+20-04-2021 12:58:03.418  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7cac93fe, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b5ac798, org.springframework.security.web.header.HeaderWriterFilter@12b5736c, org.springframework.web.filter.CorsFilter@479b5066, org.springframework.security.web.authentication.logout.LogoutFilter@3fd05b3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7668892a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56dd6efa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64deb58f, org.springframework.security.web.session.SessionManagementFilter@73a8e994, org.springframework.security.web.access.ExceptionTranslationFilter@7bf01cb]
+20-04-2021 12:58:03.448  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 12:58:03.458  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 12:58:03.462  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 12:58:03.487  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 12:58:03.489  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 12:58:03.489  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 12:58:05.947  INFO ----- [nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 12:58:05.947  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 12:58:05.953  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+20-04-2021 13:03:51.227  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:03:51.231  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:03:51.232  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 13:03:51.240  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 13:04:09.329  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 13:04:09.351  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+20-04-2021 13:04:09.679  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$97cee1a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 13:04:09.708  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 13:04:09.990  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 13:04:09.999  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:04:09.999  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 13:04:10.000  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 13:04:10.091  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 13:04:10.091  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1305 ms
+20-04-2021 13:04:10.223  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:04:10.231  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 13:04:10.388  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 13:04:10.433  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 13:04:10.446  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 13:04:10.486  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 13:04:10.642  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 13:04:10.776  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 13:04:10.906  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b33affc3-c38d-42a7-92ac-5377de722217
+
+20-04-2021 13:04:10.980  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@479b5066, org.springframework.security.web.context.SecurityContextPersistenceFilter@42383cb0, org.springframework.security.web.header.HeaderWriterFilter@539a138b, org.springframework.web.filter.CorsFilter@64deb58f, org.springframework.security.web.authentication.logout.LogoutFilter@4eb9f2af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a83495d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d634127, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b1cd7bc, org.springframework.security.web.session.SessionManagementFilter@1a1cc163, org.springframework.security.web.access.ExceptionTranslationFilter@2f382a5e]
+20-04-2021 13:04:11.003  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 13:04:11.012  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:04:11.022  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:04:11.049  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 13:04:11.051  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 13:04:11.052  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 13:04:39.259  INFO ----- [nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 13:04:39.259  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 13:04:39.265  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+20-04-2021 13:06:16.572  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:06:16.576  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:06:16.577  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 13:06:16.592  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 13:06:27.736  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 13:06:27.761  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+20-04-2021 13:06:28.108  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4b309f86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 13:06:28.138  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 13:06:28.419  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 13:06:28.428  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:06:28.428  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 13:06:28.428  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 13:06:28.522  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 13:06:28.523  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1374 ms
+20-04-2021 13:06:28.646  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:06:28.653  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 13:06:28.813  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 13:06:28.859  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 13:06:28.872  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 13:06:28.911  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 13:06:29.061  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 13:06:29.206  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 13:06:29.332  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5037fa1b-8c62-4a7d-b25f-9469f875399f
+
+20-04-2021 13:06:29.410  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bfec2f9, org.springframework.security.web.context.SecurityContextPersistenceFilter@21a9a705, org.springframework.security.web.header.HeaderWriterFilter@228bda54, org.springframework.web.filter.CorsFilter@708eb310, org.springframework.security.web.authentication.logout.LogoutFilter@79d82f66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76ececd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77fa9381, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ebc9573, org.springframework.security.web.session.SessionManagementFilter@67e25252, org.springframework.security.web.access.ExceptionTranslationFilter@d2e6b0b]
+20-04-2021 13:06:29.432  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 13:06:29.442  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:06:29.454  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:06:29.481  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 13:06:29.482  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 13:06:29.483  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 13:06:38.739  INFO ----- [nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 13:06:38.740  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 13:06:38.747  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+20-04-2021 13:07:54.229  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:07:54.230  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:07:54.231  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 13:07:54.243  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 13:08:18.673  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 13:08:18.702  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
+20-04-2021 13:08:19.074  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$59c451aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 13:08:19.104  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 13:08:19.467  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 13:08:19.476  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:08:19.477  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 13:08:19.477  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 13:08:19.585  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 13:08:19.586  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1586 ms
+20-04-2021 13:08:19.707  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:08:19.714  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 13:08:19.887  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 13:08:19.938  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 13:08:19.948  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 13:08:19.992  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 13:08:20.145  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 13:08:20.298  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 13:08:20.419  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e24c93f3-3085-4a48-869a-12bc537ed686
+
+20-04-2021 13:08:20.511  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72b43104, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e4c6583, org.springframework.security.web.header.HeaderWriterFilter@2db2a05f, org.springframework.web.filter.CorsFilter@e111c7c, org.springframework.security.web.authentication.logout.LogoutFilter@4d634127, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d901f20, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@539a138b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d0e54e0, org.springframework.security.web.session.SessionManagementFilter@64dae3b7, org.springframework.security.web.access.ExceptionTranslationFilter@7102ac3e]
+20-04-2021 13:08:20.531  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 13:08:20.541  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:08:20.559  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:08:20.589  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 13:08:20.591  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 13:08:20.591  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 13:08:23.481  INFO ----- [nio-8081-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 13:08:23.482  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 13:08:23.490  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+20-04-2021 13:09:59.870  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:09:59.872  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:09:59.872  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 13:09:59.881  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 13:10:07.420  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 13:10:07.443  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+20-04-2021 13:10:07.759  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$23051a4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 13:10:07.785  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 13:10:08.043  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 13:10:08.051  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:10:08.052  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 13:10:08.052  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 13:10:08.143  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 13:10:08.144  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1268 ms
+20-04-2021 13:10:08.270  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:10:08.278  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 13:10:08.443  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 13:10:08.492  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 13:10:08.498  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 13:10:08.542  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 13:10:08.688  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 13:10:08.822  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 13:10:08.956  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 66bbf682-458f-4fe5-b880-1ae25082edee
+
+20-04-2021 13:10:09.041  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7affc159, org.springframework.security.web.context.SecurityContextPersistenceFilter@2cd4e16a, org.springframework.security.web.header.HeaderWriterFilter@1e4c6583, org.springframework.web.filter.CorsFilter@1682c08c, org.springframework.security.web.authentication.logout.LogoutFilter@611640f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b477141, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42383cb0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fd05b3e, org.springframework.security.web.session.SessionManagementFilter@12b5736c, org.springframework.security.web.access.ExceptionTranslationFilter@64dae3b7]
+20-04-2021 13:10:09.045  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 13:10:09.053  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:10:09.084  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:10:09.113  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 13:10:09.114  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 13:10:09.115  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 13:11:13.652  INFO ----- [nio-8081-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 13:11:13.652  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 13:11:13.658  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+20-04-2021 13:20:36.158  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:20:36.162  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:20:36.162  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 13:20:36.176  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 13:21:36.084  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 13:21:36.107  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+20-04-2021 13:21:36.427  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cd92ed77] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 13:21:36.456  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 13:21:36.730  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 13:21:36.738  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:21:36.739  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 13:21:36.739  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 13:21:36.827  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 13:21:36.828  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1273 ms
+20-04-2021 13:21:36.949  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:21:36.957  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 13:21:37.118  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 13:21:37.167  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 13:21:37.175  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 13:21:37.217  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 13:21:37.360  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 13:21:37.508  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 13:21:37.635  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 978539e4-d45d-446b-87c9-ab9c81d9c3e8
+
+20-04-2021 13:21:37.717  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b20706, org.springframework.security.web.context.SecurityContextPersistenceFilter@228bda54, org.springframework.security.web.header.HeaderWriterFilter@a83495d, org.springframework.web.filter.CorsFilter@16aed49f, org.springframework.security.web.authentication.logout.LogoutFilter@72bdd7c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b3e86d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58f4b31a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66de00f2, org.springframework.security.web.session.SessionManagementFilter@d2e6b0b, org.springframework.security.web.access.ExceptionTranslationFilter@42383cb0]
+20-04-2021 13:21:37.733  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 13:21:37.740  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:21:37.761  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:21:37.786  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 13:21:37.788  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 13:21:37.788  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 13:21:56.815  INFO ----- [nio-8081-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 13:21:56.816  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 13:21:56.823  INFO ----- [nio-8081-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+20-04-2021 13:26:46.185  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:26:46.188  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:26:46.189  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 13:26:46.199  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 13:26:56.109  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 13:26:56.131  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+20-04-2021 13:26:56.455  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$70bcba35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 13:26:56.483  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 13:26:56.747  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 13:26:56.756  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:26:56.756  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 13:26:56.757  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 13:26:56.848  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 13:26:56.848  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1274 ms
+20-04-2021 13:26:56.972  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:26:56.980  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 13:26:57.140  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 13:26:57.189  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 13:26:57.197  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 13:26:57.242  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 13:26:57.400  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 13:26:57.544  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 13:26:57.654  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 58508585-d610-4015-8be3-e93b31350dfd
+
+20-04-2021 13:26:57.737  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c8dbf56, org.springframework.security.web.context.SecurityContextPersistenceFilter@4eb9f2af, org.springframework.security.web.header.HeaderWriterFilter@32f96bba, org.springframework.web.filter.CorsFilter@493b01ef, org.springframework.security.web.authentication.logout.LogoutFilter@bfec2f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ace284d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33379242, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36c2d629, org.springframework.security.web.session.SessionManagementFilter@1682c08c, org.springframework.security.web.access.ExceptionTranslationFilter@e111c7c]
+20-04-2021 13:26:57.773  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 13:26:57.780  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:26:57.782  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:26:57.805  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 13:26:57.806  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 13:26:57.807  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 13:27:02.321  INFO ----- [nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 13:27:02.321  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 13:27:02.329  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+20-04-2021 13:28:29.838  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:28:29.843  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:28:29.843  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 13:28:29.859  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 13:28:39.065  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 13:28:39.087  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+20-04-2021 13:28:39.413  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$21767248] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 13:28:39.442  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 13:28:39.714  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 13:28:39.723  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:28:39.723  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 13:28:39.724  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 13:28:39.815  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 13:28:39.815  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1289 ms
+20-04-2021 13:28:39.936  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:28:39.943  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 13:28:40.098  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 13:28:40.147  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 13:28:40.159  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 13:28:40.200  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 13:28:40.345  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 13:28:40.496  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 13:28:40.601  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0364dbe0-9c2d-4538-84bb-6cbbdda79a64
+
+20-04-2021 13:28:40.682  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19b206ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d0e54e0, org.springframework.security.web.header.HeaderWriterFilter@609e57da, org.springframework.web.filter.CorsFilter@ffd4cba, org.springframework.security.web.authentication.logout.LogoutFilter@2f14b0f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@611640f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1682c08c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f1483fd, org.springframework.security.web.session.SessionManagementFilter@72b43104, org.springframework.security.web.access.ExceptionTranslationFilter@3625a016]
+20-04-2021 13:28:40.703  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 13:28:40.711  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:28:40.722  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:28:40.745  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 13:28:40.747  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 13:28:40.747  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 13:28:53.074  INFO ----- [nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 13:28:53.074  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 13:28:53.081  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+20-04-2021 13:34:05.941  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:34:05.943  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:34:05.943  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 13:34:05.955  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+20-04-2021 13:34:32.378  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20-04-2021 13:34:32.401  INFO ----- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+20-04-2021 13:34:32.717  INFO ----- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4b309f86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-04-2021 13:34:32.746  INFO ----- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20-04-2021 13:34:33.016  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+20-04-2021 13:34:33.024  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:34:33.025  INFO ----- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+20-04-2021 13:34:33.025  INFO ----- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.35]
+20-04-2021 13:34:33.111  INFO ----- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+20-04-2021 13:34:33.111  INFO ----- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1270 ms
+20-04-2021 13:34:33.235  INFO ----- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:34:33.243  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+20-04-2021 13:34:33.402  INFO ----- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+20-04-2021 13:34:33.448  INFO ----- [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+20-04-2021 13:34:33.458  WARN ----- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-04-2021 13:34:33.497  INFO ----- [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.15.Final
+20-04-2021 13:34:33.646  INFO ----- [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20-04-2021 13:34:33.782  INFO ----- [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+20-04-2021 13:34:33.907  INFO ----- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 889580b7-8184-40a6-9fbc-48139e833468
+
+20-04-2021 13:34:33.993  INFO ----- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bfec2f9, org.springframework.security.web.context.SecurityContextPersistenceFilter@21a9a705, org.springframework.security.web.header.HeaderWriterFilter@228bda54, org.springframework.web.filter.CorsFilter@708eb310, org.springframework.security.web.authentication.logout.LogoutFilter@79d82f66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76ececd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77fa9381, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ebc9573, org.springframework.security.web.session.SessionManagementFilter@67e25252, org.springframework.security.web.access.ExceptionTranslationFilter@d2e6b0b]
+20-04-2021 13:34:34.010  INFO ----- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-04-2021 13:34:34.019  INFO ----- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:34:34.037  INFO ----- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8081"]
+20-04-2021 13:34:34.062  INFO ----- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+20-04-2021 13:34:34.064  INFO ----- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+20-04-2021 13:34:34.065  INFO ----- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+20-04-2021 13:34:36.645  INFO ----- [nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-04-2021 13:34:36.645  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+20-04-2021 13:34:36.652  INFO ----- [nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+20-04-2021 13:35:16.833  INFO ----- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-04-2021 13:35:16.834  INFO ----- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+20-04-2021 13:35:16.835  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+20-04-2021 13:35:16.842  INFO ----- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
