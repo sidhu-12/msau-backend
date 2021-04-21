@@ -1,6 +1,7 @@
 package com.accolite.msaumanagement.service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.transaction.Transactional;
@@ -22,7 +23,7 @@ public class OnboardeeService {
 	@Transactional
 	public Map<String , String > createRecord(Onboardee newOnboardee) throws Exception
 	{
-		logger.info(" Creation of record service started");
+		logger.info(" Creation of record service has been initiated");
 		String response = onboardeeRepo.create(newOnboardee);
 		Map<String , String> responseObject = new HashMap<>();
 		responseObject.put("responseMessage", response);
@@ -32,12 +33,41 @@ public class OnboardeeService {
 	@Transactional
 	public Map<String , String > deleteRecord(String email) throws Exception
 	{
-		logger.info(" Deletion of record service started");
+		logger.info(" Deletion of record service has been initiated");
 		String response = onboardeeRepo.delete(email);
 		Map<String , String> responseObject = new HashMap<>();
 		responseObject.put("responseMessage", response);
 		logger.info(" Deletion of record service ended");
 		return responseObject;
 	}
-	
+	@Transactional
+	public Map<String, String> updateRecord(Map<String,List<String>> updateList) throws Exception
+	{
+		logger.info("Updation of a Record Service has been initiated");
+		List<String> attributeList = updateList.get("attributes");
+		List<String> valueList = updateList.get("values");
+		String email = updateList.get("email").get(0);
+		String responseString  = onboardeeRepo.update(attributeList, valueList, email);
+		Map<String , String> responseObject = new HashMap<>();
+		responseObject.put("responseMessage", responseString);
+		logger.info(" Updation of a Record service ended");
+		return responseObject;
+		
+		
+	}
+	@Transactional
+	public List<Object> listRecordByAttributeList(String attribute) throws Exception{
+		logger.info("Listing of values by Attribute service has been started");
+		List<Object> responseObjectList = onboardeeRepo.listAllByAttributes(attribute);
+		logger.info("Listing of values by Attribute service ended ");
+		return responseObjectList;
+	}
+	@Transactional
+	public List<Onboardee> searchResultByAttribute(Map<String, String> attributeValueMap) throws Exception{
+		logger.info("Searching of values by Attribute service has been started");
+		List<Onboardee> respOnboardees =  onboardeeRepo.listAll(attributeValueMap.get("attribute"), attributeValueMap.get("value"));
+		logger.info("Searching of values by Attribute service ended ");
+		return respOnboardees;
+		
+	}
 }

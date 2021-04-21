@@ -22,7 +22,7 @@ public class UserLoginDAO {
 	  SecurePasswordGeneration generator;
 	  
 	public String[] authenticate(String userName, String password) throws Exception {
-		logger.info("Entering Authentication ");
+		logger.info("Entering Authentication for  "+userName);
 		String[] message = {"",""}; // array is used for lambda expression
 		try {
 			
@@ -67,7 +67,7 @@ public class UserLoginDAO {
 	}
 
 	public  boolean registerUser(UserLogin user) {
-		logger.info("Entering RegisterUser ");
+		logger.info("Entering RegisterUser for  " +user.getName());
 		
 		logger.info("Generating Secure Password");
 		String salt = UUID.randomUUID().toString();

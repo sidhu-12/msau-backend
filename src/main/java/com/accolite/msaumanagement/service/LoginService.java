@@ -29,7 +29,7 @@ public class LoginService {
 		Map <String,String> responseObject = new HashMap<>();
 		responseObject.put("responseMessage",res[0]);
 		responseObject.put("name" , res[1]);
-		logger.info(" Authenticate Service Finished   Message: " + res[0]);
+		logger.info(" Authenticate Service Finished for "+userName+ "Message: " + res[0]);
 		return responseObject;
 		
 	}
@@ -47,7 +47,7 @@ public class LoginService {
 		{
 			responseObject.put("responseMessage", "Registered Unsuccessful");
 		}
-		logger.info(" Register Service Finished");
+		logger.info(" Register Service Finished for "+user.getName());
 		return responseObject;
 		
 	}
