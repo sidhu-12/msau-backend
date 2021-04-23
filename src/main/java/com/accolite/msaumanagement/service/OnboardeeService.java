@@ -23,43 +23,43 @@ public class OnboardeeService {
 	@Transactional
 	public Map<String , String > createRecord(Onboardee newOnboardee) throws Exception
 	{
-		logger.info(" Creation of record service has been initiated");
+		logger.info(" Creation of record service has been initiated for " +newOnboardee.getEmail());
 		String response = onboardeeRepo.create(newOnboardee);
 		Map<String , String> responseObject = new HashMap<>();
 		responseObject.put("responseMessage", response);
-		logger.info(" Creation of record service ended");
+		logger.info(" Creation of record service ended for " +newOnboardee.getEmail());
 		return responseObject;
 	}
 	@Transactional
 	public Map<String , String > deleteRecord(String email) throws Exception
 	{
-		logger.info(" Deletion of record service has been initiated");
+		logger.info(" Deletion of record service has been initiated for "+email);
 		String response = onboardeeRepo.delete(email);
 		Map<String , String> responseObject = new HashMap<>();
 		responseObject.put("responseMessage", response);
-		logger.info(" Deletion of record service ended");
+		logger.info(" Deletion of record service ended  for  "+email);
 		return responseObject;
 	}
 	@Transactional
 	public Map<String, String> updateRecord(Map<String,List<String>> updateList) throws Exception
 	{
-		logger.info("Updation of a Record Service has been initiated");
+		logger.info("Updation of a Record Service has been initiated for "+ updateList.get("email").get(0));
 		List<String> attributeList = updateList.get("attributes");
 		List<String> valueList = updateList.get("values");
 		String email = updateList.get("email").get(0);
 		String responseString  = onboardeeRepo.update(attributeList, valueList, email);
 		Map<String , String> responseObject = new HashMap<>();
 		responseObject.put("responseMessage", responseString);
-		logger.info(" Updation of a Record service ended");
+		logger.info(" Updation of a Record service ended for "+updateList.get("email").get(0));
 		return responseObject;
 		
 		
 	}
 	@Transactional
 	public List<Object> listRecordByAttributeList(String attribute) throws Exception{
-		logger.info("Listing of values by Attribute service has been started");
+		logger.info("Listing of values by Attribute service has been started for "+attribute);
 		List<Object> responseObjectList = onboardeeRepo.listAllByAttributes(attribute);
-		logger.info("Listing of values by Attribute service ended ");
+		logger.info("Listing of values by Attribute service ended  for" +attribute);
 		return responseObjectList;
 	}
 	@Transactional

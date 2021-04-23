@@ -110,7 +110,7 @@ public class OnboardeeDAO {
 		  if(res == 0) //To check whether updation has been done properly
 		  {
 			 logger.info(" Updation has not been done because onboardee is not found");
-			  messageString ="Updation has not been done because onboardee is not found";
+			  messageString = "Updation has not been done because onboardee is not found";
 		  }
 		  else {
 			messageString ="Updation successfully done";
@@ -131,6 +131,7 @@ public class OnboardeeDAO {
 		  catch(Exception e)
 		  {
 			  logger.error("Listing Failed ");
+			  
 			  
 		  }
 		  return resultList;

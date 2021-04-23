@@ -21,7 +21,7 @@ public class UserLogin {
 		this.salt = salt;
 	}
 	
-	public UserLogin(String email, String password, String name, String salt, boolean isOAuth) {
+	public UserLogin(String name, String email, String password, String salt, boolean isOAuth) {
 		super();
 		this.email = email;
 		this.password = password;

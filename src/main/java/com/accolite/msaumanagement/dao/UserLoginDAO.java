@@ -1,4 +1,5 @@
 package com.accolite.msaumanagement.dao;
+import java.security.NoSuchAlgorithmException;
 import java.util.UUID;
 
 import com.accolite.msaumanagement.dao.UserLoginDAO;
@@ -24,6 +25,8 @@ public class UserLoginDAO {
 	public String[] authenticate(String userName, String password) throws Exception {
 		logger.info("Entering Authentication for  "+userName);
 		String[] message = {"",""}; // array is used for lambda expression
+		System.out.println(message[1]);
+		System.out.println(userName+password+message[0]+message[1]);
 		try {
 			
 			String sql = "SELECT   pwdhash , salt ,name from user_login where BINARY email = ?"; 
@@ -31,28 +34,34 @@ public class UserLoginDAO {
 			jdbcTemplate.query(sql, new Object[] { userName }, 
 					(rs , rowNum) -> new UserLogin(null,rs.getString(1),rs.getString(3),rs.getString(2),false)).forEach(user->{
 						String pwdOriginal = user.getPassword();
-						String pwdGenerated = generator.get_SHA_512_SecurePassword(password, user.getSalt());
+						String pwdGenerated = "";
+						try {
+							pwdGenerated = generator.get_SHA_512_SecurePassword(password, user.getSalt(),"SHA-512");
+						} catch (NoSuchAlgorithmException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+		
 //						System.out.print(user.getPassword());
-					if(user.getPassword().equals(""))
-					{
-						message[0] = "User not registered yet";
-					}
-					else if(pwdOriginal.equals(pwdGenerated) == true)
-					{
+						 if(pwdOriginal.equals(pwdGenerated) == true)
+						 {
 						
-						message[0] = "Login Successfully" ;
-						message[1] =  user.getName();
-					}
-					else
-					{
-						message[0] = "Login Unsuccessful : Password incorrect" ;
-					}
+							 message[0] = "Login Successfully" ;
+							 message[1] =  user.getName();
+						 }
+						 else
+						 {
+							 message[0] = "Login Unsuccessful : Password incorrect" ;
+							 message[1] = "";
+						 }
 				
 			});
 			if(message[0].equals("") == true)
 			{
 				message[0] = "User's email is  not registered yet ";
+				message[1] = "";
 			}
+			System.out.println(message[0]+message[1]);
 		return message;
 				
 			
@@ -66,12 +75,12 @@ public class UserLoginDAO {
 		
 	}
 
-	public  boolean registerUser(UserLogin user) {
+	public  boolean registerUser(UserLogin user) throws NoSuchAlgorithmException {
 		logger.info("Entering RegisterUser for  " +user.getName());
 		
 		logger.info("Generating Secure Password");
 		String salt = UUID.randomUUID().toString();
-		String pwdHash =  generator.get_SHA_512_SecurePassword(user.getPassword() , salt);
+		String pwdHash =  generator.get_SHA_512_SecurePassword(user.getPassword() , salt,"SHA-512");
 		
 		logger.info("Generated Secure Password");
 		

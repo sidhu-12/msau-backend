@@ -27,9 +27,10 @@ public class LoginService {
 		logger.info(" Authenticate Service Running....");
 		String[] res = userLoginRepo.authenticate(userName, password);
 		Map <String,String> responseObject = new HashMap<>();
+//		System.out.println(res[1]);
 		responseObject.put("responseMessage",res[0]);
 		responseObject.put("name" , res[1]);
-		logger.info(" Authenticate Service Finished for "+userName+ "Message: " + res[0]);
+		logger.info(" Authenticate Service Finished for "+res[1]+ " Message: " + res[0]);
 		return responseObject;
 		
 	}
@@ -45,7 +46,7 @@ public class LoginService {
 		}
 		else
 		{
-			responseObject.put("responseMessage", "Registered Unsuccessful");
+			responseObject.put("responseMessage", "Registration Unsuccessful");
 		}
 		logger.info(" Register Service Finished for "+user.getName());
 		return responseObject;

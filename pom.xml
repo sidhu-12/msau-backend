@@ -50,11 +50,6 @@
     		<version>1.7.30</version>
 		</dependency>
 		<dependency>
-    		<groupId>org.slf4j</groupId>
-    		<artifactId>slf4j-simple</artifactId>
-    		<version>1.7.30</version>
-		</dependency>
-		<dependency>
  	 		<groupId>com.google.oauth-client</groupId>
   			<artifactId>google-oauth-client</artifactId>  <!-- <Google Open Authentication> -->
   			<version>1.30.4</version>
@@ -64,11 +59,6 @@
     		<artifactId>spring-boot-starter-security</artifactId>
   		</dependency>
 		<dependency>
-    		<groupId>org.springframework.boot</groupId>
-    		<artifactId>spring-boot-starter-oauth2-client</artifactId>
-    		<version>2.4.4</version>
-		</dependency>
-		<dependency>
    			<groupId>org.springframework.boot</groupId>
    			<artifactId>spring-boot-starter-jdbc</artifactId> <!--  JDBC Connectivity -->
 		</dependency>
@@ -76,6 +66,55 @@
 		   <groupId>mysql</groupId>
 		   <artifactId>mysql-connector-java</artifactId> <!-- MYSQL CONNECTOR -->
 		</dependency>
+		<dependency>
+    		<groupId>junit</groupId>
+    		<artifactId>junit</artifactId>
+    		<version>4.13.2</version>
+   		 	<scope>test</scope>
+		</dependency>
+		<dependency>
+		 	<groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <version>5.7.1</version>
+		    <scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>2.23.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4</artifactId>
+			<version>2.0.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-mockito2</artifactId>
+			<version>2.0.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>cucumber-java</artifactId>
+		    <version>6.10.3</version>
+		</dependency>
+		
 	</dependencies>
 	
  <build>  
@@ -84,8 +123,42 @@
                 <groupId>org.springframework.boot</groupId>  
                 <artifactId>spring-boot-maven-plugin</artifactId>  
             </plugin>  
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.2</version>
+            	<executions>
+                    <execution>
+                    	<goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                    	<goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+            	</executions>
+        	</plugin>
         </plugins>  
     </build>  
-  
+  	<reporting>
+		<plugins>
+        	<plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+            	<reportSets>
+                    <reportSet>
+                        <reports>
+     	                   <!-- select non-aggregate reports -->
+                            <report>report</report>
+                        </reports>
+                    </reportSet>
+            	</reportSets>
+        	</plugin>
+		</plugins>
+	</reporting>
     
 </project>
