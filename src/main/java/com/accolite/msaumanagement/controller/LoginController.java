@@ -29,13 +29,6 @@ public class LoginController {
 	private static final Logger logger = LogManager.getLogger(LoginController.class);
 	@Autowired
 	LoginService service;
-	@GetMapping(value="/")
-	public String hello()
-	{
-		logger.info("Accessing the Default Mapping");
-		logger.trace("Show Hello World");
-		return "Hello World";
-	}
 
 	   @GetMapping("/login") 
 	   public ResponseEntity<Map<String,String>> login(@RequestParam("username")String username, @RequestParam("password")String password) throws Exception  {
