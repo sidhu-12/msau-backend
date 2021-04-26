@@ -25,16 +25,15 @@ public class UserLoginDAO {
 	public String[] authenticate(String userName, String password) throws Exception {
 		logger.info("Entering Authentication for  "+userName);
 		String[] message = {"",""}; // array is used for lambda expression
-		System.out.println(message[1]);
-		System.out.println(userName+password+message[0]+message[1]);
 		try {
 			
-			String sql = "SELECT   pwdhash , salt ,name from user_login where BINARY email = ?"; 
+			String sql = "SELECT   name, pwdhash ,salt  from user_login where BINARY email = ?"; 
 		
 			jdbcTemplate.query(sql, new Object[] { userName }, 
-					(rs , rowNum) -> new UserLogin(null,rs.getString(1),rs.getString(3),rs.getString(2),false)).forEach(user->{
+					(rs , rowNum) -> new UserLogin(rs.getString(1),null,rs.getString(2),rs.getString(3),false)).forEach(user->{
 						String pwdOriginal = user.getPassword();
 						String pwdGenerated = "";
+//						System.out.println(pwdOriginal);
 						try {
 							pwdGenerated = generator.get_SHA_512_SecurePassword(password, user.getSalt(),"SHA-512");
 						} catch (NoSuchAlgorithmException e) {
@@ -58,18 +57,18 @@ public class UserLoginDAO {
 			});
 			if(message[0].equals("") == true)
 			{
-				message[0] = "User's email is  not registered yet ";
+				message[0] = "User's email is  not registered yet";
 				message[1] = "";
 			}
-			System.out.println(message[0]+message[1]);
 		return message;
 				
 			
 		}
 		catch(Exception e)
 		{
-			logger.error("Failed Login Authentication"+e.toString());
-			throw new CustomExceptionHandler("Login authentication failure");
+			logger.error("Failed Login Authentication " );
+			e.printStackTrace();
+			throw new CustomExceptionHandler("Login authentication failure"+ e.getLocalizedMessage());
 			
 		}
 		

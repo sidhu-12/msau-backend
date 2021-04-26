@@ -27,7 +27,6 @@ public class LoginService {
 		logger.info(" Authenticate Service Running....");
 		String[] res = userLoginRepo.authenticate(userName, password);
 		Map <String,String> responseObject = new HashMap<>();
-//		System.out.println(res[1]);
 		responseObject.put("responseMessage",res[0]);
 		responseObject.put("name" , res[1]);
 		logger.info(" Authenticate Service Finished for "+res[1]+ " Message: " + res[0]);
