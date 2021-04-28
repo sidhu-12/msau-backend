@@ -1,4 +1,4 @@
-package com.accolite.msaumanagementsystemtest.integrationtest.registerStepDefinition;
+package com.accolite.msaumanagementsystemtest.integrationtest.loginCucumberTest;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
