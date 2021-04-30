@@ -1,10 +1,6 @@
 package com.accolite.msaumanagementsystemtest.controller;
-
-import javax.swing.text.GapContent;
-
-import org.assertj.core.internal.Classes;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 
@@ -34,7 +30,6 @@ import com.accolite.msaumanagement.model.UserLogin;
 import com.accolite.msaumanagement.service.LoginService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.cucumber.java.en.When;
 
 
 
@@ -54,7 +49,7 @@ public class LoginControllerTest {
 	
 	@InjectMocks
 	LoginController controller;
-	@BeforeEach
+	@Before
 	public void setUp() {
 		MockitoAnnotations.initMocks(this);
 		mock = MockMvcBuilders.standaloneSetup(controller).setControllerAdvice(new GlobalExceptionHandler()).build();

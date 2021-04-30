@@ -6,6 +6,7 @@ import static org.hamcrest.Matchers.is;
 
 import java.sql.Date;
 import java.util.HashMap;
+import java.util.Random;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +23,8 @@ public class CreateOnboardeeStepDefinition extends MSAUIntegrationTest{
 	@When("the user calls \\/create")
 	public void the_user_calls_create() {
 		long phoneNo = 9876543201L;
-		Onboardee newOnboardee = new Onboardee("sanjay1@accolitedigital.com","Sanjay",phoneNo,112189,"Chennai","Angular,Java",new Date(2021,6,25),"Pending","Completed");
+		Random random = new Random(3);
+		Onboardee newOnboardee = new Onboardee("abc"+random.nextInt()+"@accolitedigital.com","abc",phoneNo,112189,"Chennai","Angular,Java",new Date(2021,6,25),"Pending","Completed");
 		response = create(newOnboardee);
 }
 

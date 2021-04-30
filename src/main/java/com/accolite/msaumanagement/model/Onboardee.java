@@ -26,12 +26,6 @@ public class Onboardee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	@Override
-	public String toString() {
-		return "Onboardee [email=" + email + ", name=" + name + ", phoneNo=" + phoneNo + ", demandId=" + demandId
-				+ ", location=" + location + ", skills=" + skills + ", startDate=" + startDate
-				+ ", backgroundCheckStatus=" + backgroundCheckStatus + ", onBoardStatus=" + onBoardStatus + "]";
-	}
 	public Onboardee(String email, String name, long phoneNo, int demandId, String location, String skills,
 			Date startDate, String backgroundCheckStatus, String onBoardStatus) {
 		super();

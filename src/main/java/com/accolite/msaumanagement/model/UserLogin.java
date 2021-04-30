@@ -53,11 +53,6 @@ public class UserLogin {
 	public void setOAuth(boolean isOAuth) {
 		this.isOAuth = isOAuth;
 	}
-	@Override
-	public String toString() {
-		return "UserLogin [serialUUID=" + serialUUID + ", email=" + email + ", Password=" + password + ", name=" + name
-				+ ", isOAuth=" + isOAuth + "]";
-	}
 	
 	
 }
